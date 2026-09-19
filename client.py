@@ -15,7 +15,7 @@ def resolve_model_name():
     model = os.getenv("GROQ_MODEL")
     if model:
         return model
-    return "llama-3.1-8b-instant"
+    return "openai/gpt-oss-20b"
 
 
 # -----------------------------------------
