@@ -1,0 +1,32 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 32px 'Segoe UI', sans-serif; fill: #f8fafc; }
+      .label { font: 600 20px 'Segoe UI', sans-serif; fill: #93c5fd; }
+      .user { font: 18px 'Consolas', 'Courier New', monospace; fill: #bfdbfe; }
+      .assistant { font: 18px 'Consolas', 'Courier New', monospace; fill: #bbf7d0; }
+      .panel { fill: rgba(15,23,42,0.9); stroke: #334155; stroke-width: 2; }
+      .bubble-user { fill: #1d4ed8; opacity: 0.9; }
+      .bubble-assistant { fill: #166534; opacity: 0.9; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect x="60" y="45" width="1080" height="520" rx="18" class="panel"/>
+  <text x="95" y="95" class="title">LangChain + MCP Client</text>
+  <text x="95" y="130" class="label">Example interaction</text>
+
+  <rect x="95" y="160" width="1000" height="110" rx="18" class="bubble-user"/>
+  <text x="125" y="215" class="user">You: What is 12 + 18?</text>
+
+  <rect x="95" y="290" width="1000" height="180" rx="18" class="bubble-assistant"/>
+  <text x="125" y="340" class="assistant">Assistant: 12 + 18 = 30</text>
+  <text x="125" y="380" class="assistant">Tool used: add(a=12, b=18)</text>
+  <text x="125" y="420" class="assistant">Status: Completed successfully</text>
+
+  <text x="95" y="510" class="label">Connected to: http://127.0.0.1:8001/mcp</text>
+</svg>
