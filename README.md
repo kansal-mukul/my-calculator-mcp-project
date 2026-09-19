@@ -121,13 +121,13 @@ Create a `.env` file in the root folder with the following values:
 
 ```env
 GROQ_API_KEY=your_groq_api_key_here
-GROQ_MODEL=llama-3.1-8b-instant
+GROQ_MODEL=openai/gpt-oss-20b
 ```
 
 Notes:
 
 - `GROQ_API_KEY` is required for the client to work.
-- `GROQ_MODEL` is optional; if omitted, the app falls back to `llama-3.1-8b-instant`.
+- `GROQ_MODEL` is optional; if omitted, the app falls back to `openai/gpt-oss-20b`.
 
 ---
 
